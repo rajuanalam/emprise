@@ -32,7 +32,8 @@ const TourFrom = () => {
     <>
     <Form>
     <div className="bg-[#FBFBFB] w-[376px]  px-6 py-4">
-            <Paragraph text="£2469" className="!text-sm  !text-[#FA3E2C] !font-medium"/>
+            
+            <del className='text-[#FA3E2C]'><Paragraph text="£2469" className="!text-sm  !text-[#FA3E2C] !font-medium"/></del>
            <div className='flex justify-between pt-3 pb-2'>
             <Paragraph text="£1759" className="!text-4xl !font-bold !text-[#1D293F]"/>
             <Paragraph text=" per person" className="!text-sm  !text-[#546179] !font-medium"/>
