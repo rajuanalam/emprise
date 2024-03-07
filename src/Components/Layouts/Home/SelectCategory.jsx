@@ -10,7 +10,7 @@ import LeftArrow from '../../LeftArrow'
 import CategoryData from '../../Data/CategoryData'
 
 const SelectCategory = () => {
-
+// Slider Setting Start
   const settings = {
     dots: false,
     infinite: true,
@@ -20,8 +20,11 @@ const SelectCategory = () => {
     nextArrow:<RightArrow />,
     prevArrow:<LeftArrow />
   };
+// Slider Setting End
 
+// Category Part Data Start
   const [product, setProduct] = useState(CategoryData());
+// Category Part Data End
 
   return (
     <section className=' pt-10 pb-20'>
@@ -43,7 +46,6 @@ const SelectCategory = () => {
           ))}
             </Slider>
             </div>
-            
         </Container>
     </section>
   )

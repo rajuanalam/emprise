@@ -10,6 +10,7 @@ import LeftArrow from '../../LeftArrow'
 import GuideData from '../../Data/GuideData'
 
 const TourGuide = () => {
+  // Slider Setting Start
     var settings = {
         dots: false,
         infinite: true,
@@ -19,9 +20,12 @@ const TourGuide = () => {
         nextArrow:<RightArrow />,
         prevArrow:<LeftArrow />
       };
+      // Slider Setting End
+
+      // TourGuide Part Data start
     
       const [product, setProduct] = useState(GuideData());
-     
+     // TourGuide Part Data End
   return (
     <>
     <section className=' pt-10 pb-20'>

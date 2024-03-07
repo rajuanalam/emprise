@@ -9,8 +9,7 @@ import Eco from '../../../assets/ecotourism-australia.png'
 import Trip from '../../../assets/trip-advisor.png'
 import Iata from '../../../assets/iata.png'
 const Patners = () => {
-   
-
+  //  Slider settings start
     const settings = {
         infinite: true,
         slidesToShow: 6,
@@ -19,6 +18,9 @@ const Patners = () => {
         autoplaySpeed: 2000,
         arrows:false,
       };
+  //  Slider settings End
+
+  // Partners part Data start
       const [product, setProduct] = useState([
         {img:Lab,
         alt:Lab,
@@ -38,12 +40,13 @@ const Patners = () => {
         {img:Iata,
         alt:Iata,
         },
-    
     ])
+    // Partners part Data End
   return (
     <section className='pb-32'>
         <Container>
             <div className="items-center">
+        
             <Slider {...settings}>
             {product.map((el, index) => (
             <div className="" key={index}>

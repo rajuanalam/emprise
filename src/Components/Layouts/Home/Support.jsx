@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import Container from '../../Container'
 import Flex from '../../Flex'
 import SupportCard from '../../SupportCard'
-
 import Heading from '../../Heading'
 import Paragraph from '../../Paragraph'
 import { MdOutlineHeadphones } from "react-icons/md";
 import { IoMdHelpCircleOutline } from "react-icons/io";
 const Support = () => {
+
+  // Support Part Data Start
   const [product, setProduct] = useState([
     {
 
@@ -30,6 +31,7 @@ const Support = () => {
 
     },
   ]);
+  // Support Part Data Start
   return (
  <section className='pb-32'>
     <Container>

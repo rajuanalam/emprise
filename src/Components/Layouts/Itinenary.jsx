@@ -32,7 +32,7 @@ const Itinenary = () => {
 
   return (
     <>
-    <div className="mt-10">
+    <div className="pt-24">
     <Flex>
     <div className="w-[120px]">
         <Image src={Map} alt={Map}/>

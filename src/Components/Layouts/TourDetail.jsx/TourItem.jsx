@@ -21,20 +21,16 @@ const TourItem = () => {
                     <TourHeader />
                     <SubMenu />
                     <OverView />
+                    <Itinenary/>
+                    <Inclusion />
+                    <Reviews />
+                    <FAQ />
                   </div>
                   <div className='pl-20 pt-10'>
                      <TourFrom />
                   </div>
                 </Flex>
-                <div>
-                  <Itinenary />
-                  <Inclusion />
-                  <Reviews />
-                  <FAQ />
-                  
-                </div>
-            </div>
-            
+            </div> 
         </Container>
     </section>
     </>

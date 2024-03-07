@@ -10,12 +10,12 @@ import { FaStar } from "react-icons/fa";
 const TourHeader = () => {
   return (
     <>
-    <div className="mt-4 border-b border-grayColor inline-block">
+    <div className="mt-4 border-b border-b-grayColorTwo inline-block">
         <div className="mb-6">
             <BoxParagraph text='Destination > Portugal > Laos' className='py-2 !text-grayColor'/>
         <Flex>
             <Heading as='h2' text='Sandy beach holiday in Lagos' className='!text-[36px] py-4'/>
-            <Link><GoShare className='text-[24px] text-paraColor ml-64 mt-8'/></Link>
+            <Link><GoShare className='text-[24px] text-paraColor ml-60 mt-8'/></Link>
             <Link><CiHeart className='text-[24px] text-paraColor ml-8 mt-8'/></Link>
         </Flex>
        

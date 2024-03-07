@@ -28,12 +28,12 @@ const OverView = () => {
   };
   return (
    <>
-   <div className="mt-10">
+   <div className="pt-16">
     <Flex>
     <div className="w-[120px]">
       <Sheet />
     </div>
-    <div className="w-[630px] border-b border-grayColor inline-block">
+    <div className="w-[630px] border-b border-b-grayColorTwo inline-block">
       <BoxParagraph text='Dolor elit voluptate cupidatat in eiusmod. Eiusmod ex eu incididunt etile pariatur dolor mollit reprehenderit magna tempor ex minim velit sunt do. Elit dolore sunt cupidatat minim nisi nulla fugiat sit dolor adipisicing excepteur eiusmod. Mollit reprehenderit magna tempor ex.' className='!font-normal'/>
       
       <div>

@@ -16,7 +16,7 @@ const ResultsData = () => {
       {
         topSrc: TourOne,
         topAlt: "image",
-        headTxt: "Cultural highlights round trip one",
+        headTxt: "Cultural highlights trip one",
         paraTxt: "Hiking Tour | Stoke on Trent",
         price: "$895.00",
         days: "7 Days",

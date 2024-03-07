@@ -54,11 +54,11 @@ const TourFrom = () => {
               <Paragraph text="Travelers" className="!text-base !text-grayColor pb-1"/>
               <Input type="text" placeholder="2 Adult, 1 Child" className=" !text-base !text-grayColor border rounded-md px-2 py-2 w-[328px] h-12"/>
               <div className="absolute top-[68px] right-6 flex gap-x-3">
-                <div onClick={()=>disPatch(decrement())}>
+                <div onClick={()=>disPatch(decrement())} className="cursor-pointer">
                 <Minus />
                 </div>
                 <Paragraph text={data} className="!text-lg !font-semibold !text-black "/>
-                <div onClick={()=>disPatch(increment())}>
+                <div onClick={()=>disPatch(increment())} className="cursor-pointer">
                 <Plus />
                 </div>
               </div>
@@ -67,22 +67,22 @@ const TourFrom = () => {
             <div className="relative">
               <Paragraph text="Selections" className="!text-base !text-grayColor pb-1"/>
               <Input type="text" placeholder="Flight, hotel, car etc." className=" !text-base !text-grayColor border rounded-md px-2 py-2 w-[328px] h-12"/>
-              <div className="absolute top-10 right-6"  onClick={() => { handleSearchClick(sdropRef, sbtnRef);}} ref={sbtnRef}>
-              <Plus/>
+              <div className="absolute top-10 right-6 cursor-pointer"  onClick={() => { handleSearchClick(sdropRef, sbtnRef);}} ref={sbtnRef}>
+              <Plus />
               </div>
 
               <div>
               <div ref={sdropRef}  className="bg-white w-[328px] absolute top-20 left-0 hidden z-50 rounded-xl">
                                
-                               <ul className='text-grayColor'>
-                                   <List to="#" text="Flight" className="border-b border-grayColor block py-2 pl-2 hover:bg-gray-200"/>
-                                   <List to="#" text="Hotel" className="border-b border-grayColor block py-2 pl-2  hover:bg-gray-200"/>
-                                   <List to="#" text="Car" className="border-b border-grayColor block py-2 pl-2  hover:bg-gray-200"/>
-                                   <List to="#" text="Resort" className="border-b border-grayColor block py-2 pl-2 hover:bg-gray-200"/>
-                                   <List to="#" text="Resturant" className="border-b border-grayColor block py-2 pl-2 hover:bg-gray-200"/>
-                               </ul>
-                           </div>
-              </div>
+                   <ul className='text-grayColor'>
+                      <List to="#" text="Flight" className="border-b border-grayColor block py-2 pl-2 hover:bg-blue-500 hover:text-white hover:rounded-sm"/>
+                      <List to="#" text="Hotel" className="border-b border-grayColor block py-2 pl-2  hover:bg-blue-500 hover:text-white hover:rounded-sm"/>
+                      <List to="#" text="Car" className="border-b border-grayColor block py-2 pl-2  hover:bg-blue-500 hover:text-white hover:rounded-sm"/>
+                      <List to="#" text="Resort" className="border-b border-grayColor block py-2 pl-2 hover:bg-blue-500 hover:text-white hover:rounded-sm"/>
+                      <List to="#" text="Resturant" className="border-b border-grayColor block py-2 pl-2 hover:bg-blue-500 hover:text-white hover:rounded-sm"/>
+                  </ul>
+             </div>
+            </div>
             </div>
             
             <div className="pt-10">
@@ -92,6 +92,7 @@ const TourFrom = () => {
        <div className='pt-20 w-[340px] pl-6'>
             <BoxParagraph text="If you have question about this tour, please feel free to ask" className="!font-normal"/>
             <button className='font-Poppins font-regular text-lg px-16 py-3  w-[328px] rounded-full border text-grayColor mt-5 hover:bg-gradient-to-r from-[#FF9D4B] to-[#FA126C] hover:text-white'>Ask the Tour Expert</button>
+            <Paragraph text="*All questions are replied to within 24-48 hrs" className="!text-sm !text-grayColor pt-7 text-center"/>
         </div>
     </Form>
     </>

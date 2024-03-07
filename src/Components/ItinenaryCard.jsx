@@ -22,9 +22,10 @@ const ItinenaryCard = ({icon,day,title,textOne,imgOne,textTwo,packOne,packTwo,pa
   };
   return (
    <>
+   <div className='rounded-xl'>
    <div className="bg-heardBg inline-block border-b border-b-grayColorTwo pb-2">
    <Link ref={iconRef} onClick={() => {handleShow()}}>
-    <Flex className='my-6'>
+    <Flex className='my-6 pl-[7px]'>
         
         <div className='bg-btnColor text-[22px] text-white p-2 inline-block rounded-full'>{icon}</div>
         <BoxParagraph text={day} className='!font-semibold pt-2 pl-5'/>
@@ -83,6 +84,7 @@ const ItinenaryCard = ({icon,day,title,textOne,imgOne,textTwo,packOne,packTwo,pa
         </div>
        
         </div>
+   </div>
    </div>
    </>
   )

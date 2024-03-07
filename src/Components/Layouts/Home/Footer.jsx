@@ -18,16 +18,25 @@ const Footer = () => {
     <>
     <section className='pt-28'>
         <Container>
+          {/* Footer Top part Start */}
             <QuickLink />
             <GetInTouch />
+          {/* Footer Top part End */}
             <Flex className="justify-between pt-8 pb-28">
+              {/* Footer Links Part start */}
                 <div>
                     <FooterLinks />
                 </div>
+                {/* Footer Links Part End */}
+
+                {/* Footer Mailbox Part Start */}
                 <div >
                   <LetsTalk />
                 </div>
+                 {/* Footer Mailbox Part Start */}
             </Flex>
+
+            {/* Footer Bottom Part start */}
             <div>
             <Flex className='justify-between pb-10 border-b border-bottomBorder'>
                 <Heading as='h5' text='Privacy Policy' className='!text-2xl !font-normal '/>
@@ -44,6 +53,7 @@ const Footer = () => {
               <Image src={Payment} alt={Payment} />
             </Flex>
             </div>
+             {/* Footer Bottom Part End */}
         </Container>
     </section>
     </>
